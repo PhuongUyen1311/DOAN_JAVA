@@ -8,9 +8,10 @@ package Main;
  *
  * @author hp
  */
-import GUI.StoreScreen;
+import GUI.LoginUI;
+
 public class Main {
     public static void main(String []args){
-        StoreScreen s= new StoreScreen();
+        LoginUI l = new LoginUI();
     }
 }
