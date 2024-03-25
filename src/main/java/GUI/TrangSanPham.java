@@ -28,7 +28,7 @@ public class TrangSanPham extends JPanel implements MouseListener{
     }
     public void init(){
         this.setPreferredSize(new Dimension(chieurong,chieucao));
-        setLayout(new FlowLayout(3,22,15));
+        setLayout(new FlowLayout(3,15,15));
         setBackground(backGroundColor);
         setOpaque(true);
         
