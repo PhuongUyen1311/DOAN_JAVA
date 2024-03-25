@@ -74,7 +74,7 @@ class SignUp extends JFrame {
                             g.dispose();
                         }
                     };*/
-//------------- XỬ LÝ SỰ KIỆN THAY ĐỔI AVT ( NẾU CÓ )
+//------------- XỬ LÝ SỰ KIỆN THAY ĐỔI AVT 
 //        imageLabel.addMouseListener(new MouseAdapter() {
 //            @Override
 //            public void mouseClicked(MouseEvent e) {
