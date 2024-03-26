@@ -124,7 +124,7 @@ public class TrangTaiKhoan extends JPanel {
 
             }
 
-            ImageIcon icon = new ImageIcon("D:/thanh phuong/images/User-Lock.png");
+            ImageIcon icon = new ImageIcon("./src/main/java/images/User-Lock.png");
 
             Image scaledImage = icon.getImage().getScaledInstance(25, 25, Image.SCALE_SMOOTH);
             ImageIcon resizedIcon = new ImageIcon(scaledImage);

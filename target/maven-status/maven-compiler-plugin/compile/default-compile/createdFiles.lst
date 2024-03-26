@@ -2,6 +2,7 @@ GUI\StoreScreen.class
 GUI\StoreScreen$1.class
 GUI\TrangTaiKhoan.class
 GUI\view_mouselisten.class
+GUI\LoginUI$1.class
 GUI\mls_chi_tiet_san_pham.class
 GUI\SearchInStore.class
 GUI\view_chi_tiet_san_pham.class
@@ -9,6 +10,7 @@ GUI\SanPham.class
 GUI\TaiKhoan.class
 GUI\MenuChucNangStore$1.class
 GUI\TrangTaiKhoan$1.class
+GUI\LoginUI$2.class
 GUI\view_thong_bao.class
 GUI\SignUp$2.class
 GUI\SignUp$3.class
@@ -17,6 +19,9 @@ GUI\ThongTinTaiKhoan.class
 GUI\TrangSanPham.class
 GUI\MenuChucNangStore.class
 GUI\TrangTaiKhoan$2.class
+GUI\LoginUI$3.class
 GUI\SignUp$1.class
+Main\Main.class
 GUI\Cacthuoctinh_phuongthuc_chung.class
+GUI\LoginUI.class
 GUI\ThaotacInStore.class
