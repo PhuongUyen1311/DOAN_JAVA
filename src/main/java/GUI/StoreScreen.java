@@ -97,13 +97,7 @@ public class StoreScreen extends JFrame{
         
         
         menu= new MenuChucNangStore(chieurong,chieucao,this);
-        pageContent.setLayout(new BorderLayout());
-        pageContent.add(new JLabel("Chưa lựa chọn chức năng",JLabel.CENTER),BorderLayout.CENTER);
-        pageContent.setPreferredSize(new Dimension(chieurong-(int)menu.getPreferredSize().getWidth()-20,380));
-        pageContent.setBackground(Color.WHITE);
-        pageContent.setOpaque(true);
-        //end
-
+        
         JPanel centerContent= new JPanel();
         centerContent.setPreferredSize(new Dimension(chieurong, chieucao));
         centerContent.setLayout(new FlowLayout(3,10,0));
@@ -115,6 +109,15 @@ public class StoreScreen extends JFrame{
 
         thaotac= new ThaotacInStore(chieurong-(int)menu.getPreferredSize().getWidth()-20);
         centerContent.add(thaotac);
+        
+        pageContent.setLayout(new BorderLayout());
+        pageContent.add(new JLabel("Chưa lựa chọn chức năng",JLabel.CENTER),BorderLayout.CENTER);
+        pageContent.setPreferredSize(new Dimension(chieurong-(int)menu.getPreferredSize().getWidth()-20,chieucao-20-(int)search.getPreferredSize().getHeight()-(int)thaotac.getPreferredSize().getHeight()-(int)title_bar.getPreferredSize().getHeight()));
+        pageContent.setBackground(Color.WHITE);
+        pageContent.setOpaque(true);
+        //end
+
+        
         
 
         centerContent.add(pageContent);
