@@ -215,7 +215,21 @@ public class MenuChucNangStore extends JPanel implements MouseListener{
         int crong=(int)wrap.getPreferredSize().getWidth();
         int ccao=(int)wrap.getPreferredSize().getHeight();
         wrap.removeAll();
-        wrap.add(new TrangSanPham(crong, ccao,main.pageContent.getBackground()));
+        TrangSanPham t = new TrangSanPham(crong, 600,main.pageContent.getBackground());
+        JScrollPane scrollPane = new JScrollPane(t);
+        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        wrap.add(scrollPane);
+        wrap.revalidate(); // Cập nhật lại cấu trúc của JPanel
+        wrap.repaint();
+    }
+    public void showTrangtaikhoan(JPanel wrap){
+        int crong=(int)wrap.getPreferredSize().getWidth();
+        int ccao=(int)wrap.getPreferredSize().getHeight();
+        wrap.removeAll();
+        TrangTaiKhoan t = new TrangTaiKhoan(crong,600);
+        JScrollPane scrollPane = new JScrollPane(t);
+        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        wrap.add(scrollPane);
         wrap.revalidate(); // Cập nhật lại cấu trúc của JPanel
         wrap.repaint();
     }
@@ -257,7 +271,7 @@ public class MenuChucNangStore extends JPanel implements MouseListener{
                                     showTrangsanpham(main.pageContent);
                                     break;
                                 case "Quản lý tài khoản":
-                                    
+                                    showTrangtaikhoan(main.pageContent);
                                     break;
                                 case "Quản lý khách hàng":
                                     
