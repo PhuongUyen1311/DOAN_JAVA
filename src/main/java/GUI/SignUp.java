@@ -24,6 +24,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import java.awt.Cursor;
+import javax.swing.JPasswordField;
 
 
 class SignUp extends JFrame {
@@ -263,7 +264,7 @@ class SignUp extends JFrame {
                         password.setPreferredSize(new Dimension(150, 30));
                         password.setFont(new Font(Cacthuoctinh_phuongthuc_chung.font_family, Font.BOLD, 14));
                         password.setForeground(Cacthuoctinh_phuongthuc_chung.darkness_blue);
-                        JTextField pass = new JTextField();
+                        JPasswordField pass = new JPasswordField();
                         pass.setPreferredSize(new Dimension(200, 30));
                         JLabel warning2 = new JLabel("*Không được để trống!!", JLabel.RIGHT);
                         warning2.setPreferredSize(new Dimension(200, 30));
@@ -285,7 +286,7 @@ class SignUp extends JFrame {
                         repassword.setPreferredSize(new Dimension(150, 30));
                         repassword.setOpaque(true);
                         repassword.setForeground(Cacthuoctinh_phuongthuc_chung.darkness_blue);
-                        JTextField repass = new JTextField();
+                        JPasswordField repass = new JPasswordField();
                         repass.setPreferredSize(new Dimension(200, 30));
                         JLabel warning3 = new JLabel("*Không được để trống!", JLabel.RIGHT);
                         warning3.setPreferredSize(new Dimension(200, 30));
